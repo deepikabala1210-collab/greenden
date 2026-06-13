@@ -21,6 +21,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
+        id="menuicon"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
@@ -34,7 +35,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         />
       </svg>
 
-      <ul class="flex gap-3 text-gray-600 hidden md:flex">
+      <ul  class="flex gap-3 text-gray-600 hidden md:flex">
         <li>
           <a href="index.html" class="hover:underline hover:text-black">Home</a>
         </li>
@@ -48,6 +49,22 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         </li>
       </ul>
     </nav>
+
+      <!-- Side Nav Bar -->
+    <section id="sidenav" class="bg-green-100 fixed  top-0 z-20 transition-all duration-1000" style="width:50%;height:100vh;right:-50%">
+      <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col items-center gap-5 text-gray-600">
+        <li><a href="index.html" class="hover:underline hover:text-black">Home</a></li>
+        <li>
+          <a href="products.html" class="hover:underline hover:text-black">Products</a>
+        </li>
+        <li>
+          <a href="contact.html" class="hover:underline hover:text-black">Contact</a>
+        </li>
+      </ul>
+    </section>
 
     <!-- Content -->
 
@@ -132,5 +149,6 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
       </p>
       <p>&copy; 2026 Greenden.com</p>
     </section>
+    <script src="contact.js"></script>
   </body>
 </html>
